@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Variation', 'Content First', 'Scalability', 'Pattern', 'Complexity'],
+        ['Clean Grid', 2, 2,  'Header',   1.5],
+        ['Select JS',   4.25,  3,  'Select',   2],
+        ['Multi-Toggle', 4,  5,  'Toggle',  4],
+        ['Left-Nav Flyout', 4.5,  3.5,  'Off Canvas', 4.5],
+        ['Full Screen Overlay', 3.75,  4.25,  'Toggle',    3.5],
+        ['Toggle',    4,  3,   'Toggle',    3.5],
+        ['Footer Fixed',  3.5,    1.5,  'Footer',    1.75],
+        ['Footer Only', 5, 2, 'Footer', 1],
+        ['Panels',  4,  3.75,  'Off Canvas',  5],
+        ['Footer Anchor',  4, 2, 'Footer',  1.5],
+      ]);
+
+      var options = {
+        title: 'Correlation between Content Focus, Scalability, and Complexity for Mobile Navigation Patterns.',
+        hAxis: {title: 'Content Focus', baseline: 0, viewWindowMode: 'pretty'},
+        vAxis: {title: 'Scalability', baseline: 0, viewWindowMode: 'pretty'},
+        bubble: {
+          textStyle: {
+            auraColor: 'none',
+            fontSize: 10.5,
+          }
+        }
+      };
+
+      var chart = new google.visualization.BubbleChart(document.getElementById('noAura'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id="noAura" style="width: 1200px; height: 650px;"></div>
+</body>
+</html>
