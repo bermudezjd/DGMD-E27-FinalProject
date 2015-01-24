@@ -53,10 +53,6 @@
 }
  
 @media screen and (max-width: 749px) {
-  .wrapper {
-    padding: 0;
-  }
-
   /* Float content right and make 100% width 
      so this transition works when nav is made visible */
   .inner {

@@ -480,6 +480,9 @@ footer {
  }
 
 @media only screen and (max-width: 579px) {
+  .wrapper {
+    padding: 0;
+  }
   /* line 120, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
   header h1 {
     font-size: 1.5em; }
