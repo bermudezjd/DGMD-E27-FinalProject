@@ -448,46 +448,89 @@ nav {
 /* line 83, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
 .wrapper {
   width: 100%;
+  overflow: hidden;
   max-width: 1024px;
   margin: 0 auto;
   padding: 1em 2em;
   background-color: #d2c5c7; }
 
-/* line 91, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+/* line 92, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
 footer {
   text-align: center; }
 
 /* row padding system */
-/* line 97, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+/* line 98, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
 .row::after {
   content: "";
   display: table;
   clear: both; }
 
 /* Opt-in outside padding */
-/* line 105, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+/* line 106, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
 .row-pad {
   padding: 1.25em; }
 
-@media only screen and (min-width: 580px) and (max-width: 850px) {
-  /* line 111, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+/* Menu button for toggle and sidebar nav patterns */
+/* line 111, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+.btn {
+  display: none;
+  /* Hide button at normal widths */
+  float: left;
+  margin: 0.5em 1em 0.5em;
+  background: #999;
+  padding: 0.25em 2%;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.25em;
+  background-color: #5b5756;
+  background-image: -webkit-linear-gradient(top, #6b6766, #5b5756);
+  background-image: -moz-linear-gradient(top, #6b6766, #5b5756);
+  background-image: -ms-linear-gradient(top, #6b6766, #5b5756);
+  background-image: -o-linear-gradient(top, #6b6766, #5b5756);
+  background-image: linear-gradient(top, #6b6766, #5b5756); }
+
+/* line 128, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+.btn:hover {
+  background-color: #7b7776;
+  background-image: -webkit-linear-gradient(top, #8b8786, #7b7776);
+  background-image: -moz-linear-gradient(top, #8b8786, #7b7776);
+  background-image: -ms-linear-gradient(top, #8b8786, #7b7776);
+  background-image: -o-linear-gradient(top, #8b8786, #7b7776);
+  background-image: linear-gradient(top, #8b8786, #7b7776); }
+
+/* line 137, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+.close {
+  display: none; }
+
+/* line 141, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+#toggle {
+  position: absolute;
+  left: -999em; }
+
+@media only screen and (min-width: 750px) and (max-width: 850px) {
+  /* line 147, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
   header h1 {
     font-size: 1.8em; }
 
-  /* line 114, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+  /* line 150, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
   h2 {
     font-size: 1.2em; }
  }
 
-@media only screen and (max-width: 579px) {
+@media only screen and (max-width: 749px) {
+  /* line 156, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
   .wrapper {
-    padding: 0;
-  }
-  /* line 120, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+    padding: 0; }
+
+  /* line 160, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+  .btn {
+    display: block; }
+
+  /* line 164, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
   header h1 {
     font-size: 1.5em; }
 
-  /* line 123, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
+  /* line 167, /Users/jab691/Documents/workspaces/harvard-extension/dgmde27-January2015/DGMD-E27-FinalProject/sass/site */
   h2 {
     font-size: 1.1em; }
  }

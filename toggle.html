@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DGMD-E27-Assignment2-Jaime-Bermudez</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/toggle.css">    
+</head>
+<body>
+    <input id="toggle" type="checkbox">
+    <div class="wrapper">
+      <header class="row row-pad">
+          <label class="btn" for="toggle" onclick>Menu</label>
+          <h1>Mobile Nav Patterns</h1>
+      </header>
+      <nav class="row">
+        <ul>
+            <li><a href="index.html" rel="bookmark">Home</a></li>
+            <li><a href="offcanvas.html">Sidebar Nav</a></li>
+            <li><a href="toggle.html">Toggle</a></li>
+            <li><a href="cleangrid.html">CleanGrid</a></li>
+            <li><a href="offcanvas.html">Sidebar Nav</a></li>
+            <li><a href="toggle.html">Toggle</a></li>
+            <li><a href="cleangrid.html">CleanGrid</a></li>
+        </ul>
+      </nav>
+      <main class="row row-pad">
+          <article>
+              <h2>Toggle Pattern</h2>
+              <p>At smaller widths, the header is effectively hidden by setting the link heights to zero.
+              </p>
+              <p>A hidden checkbox is introduced outside of the wrapper div and it's "checked" effect is used to trigger the transitions (as opposed to a JS solution).  The link heights are adjusted using the checked selector and the links appear to slide in from below the header.  The nav is absolutely positioned with a high z-index so the links cover up the content.</p>
+              <p>The desktop width styles for the nav start just like the other patterns: positioned statically below the header.</p>
+          </article>
+      </main>
+      <footer class="row row-pad">
+          &copy; 2015 Bermudez, Inc.
+      </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* Toggle */
+  
+@media screen and (max-width: 749px) {
+  /* absolute positioning allows nav to slide over content */
+  nav {
+    position: absolute;
+  }
+
+  /* Hide the nav by making all links zero height */
+  nav ul a {
+    height: 0;
+    line-height: 0;
+    display: block;
+    float: none;
+    border-bottom-width: 0;
+    padding: 0 0 0 5%;
+    overflow: hidden;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+            transition: 0.5s;
+  }
+
+  nav ul a:hover {
+    background-color: #363229;
+    color: #fff;
+  }
+  
+  #toggle:checked ~ .wrapper nav {
+    z-index: 101;
+    -webkit-box-shadow: 0px 3px 10px 3px #777;
+       -moz-box-shadow: 0px 3px 10px 3px #777;
+        -ms-box-shadow: 0px 3px 10px 3px #777;
+         -o-box-shadow: 0px 3px 10px 3px #777;
+            box-shadow: 0px 3px 10px 3px #777;
+  }
+
+  /* This will trigger the transition */
+  #toggle:checked ~ .wrapper nav a {
+    line-height: 3em;
+    height: 3em;
+    border-bottom: 2px solid #777;
+  }  
+}
