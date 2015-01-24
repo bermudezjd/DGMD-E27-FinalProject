@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DGMD-E27-Assignment2-Jaime-Bermudez</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/offcanvas.css">    
+</head>
+<body>
+    <input id="toggle" type="checkbox">
+    <div class="wrapper">
+        <div class="inner">
+          <header class="row row-pad">
+              <label class="btn" for="toggle" onclick>Menu</label>
+              <h1>Mobile Navigation Patterns</h1>
+          </header>
+          <nav class="row">
+              <label class="close" for="toggle" onclick><span>X</span> Close</label>
+              <ul>
+                <li><a href="index.html" rel="bookmark">CleanGrid</a></li>
+                <li><a href="offcanvas.html">Left Nav Flyout</a></li>
+                <li><a href="index.html">Multi-Toggle</a></li>
+                <li><a href="index.html">CleanGrid</a></li>
+                <li><a href="offcanvas.html">Left Nav Flyout</a></li>
+                <li><a href="index.html">Multi-Toggle</a></li>
+                <li><a href="index.html">CleanGrid</a></li>
+              </ul>
+          </nav>
+          <main class="row row-pad">
+              <article>
+                  <h2>Left Nav Flyout Off-Canvas Pattern</h2>
+                  <p>This is an off-canvas pattern that places the nav off to the left of the content area using position fixed at smaller screen widths.  An inner wrapper div containing the content is floated right and transitions animations are added to the nav and that inner wrapper div.
+                  </p>
+                  <p>A hidden checkbox is introduced outside of the wrapper div and it's "checked" effect is used to trigger the transitions.  As the nav appears to slide in, the content inside the innner wrapper div is pushed to the right due to the float.</p>
+                  <p>The desktop width styles for the nav start just like the other patterns: positioned statically below the header.</p>
+              </article>
+          </main>
+          <footer class="row row-pad">
+              &copy; 2015 Bermudez, Inc.
+          </footer>
+        </div>
+    </div>
+</body>
+</html>

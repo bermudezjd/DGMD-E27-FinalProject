@@ -1,0 +1,22 @@
+/* Fonts */
+$font-primary: Arial, Geneva, sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+$font-serif: Georgia, Times, serif;
+/* Colors */
+$color-primary: #644D52 ; /* orange nav background */
+$color-primary-dark: darken($color-primary, 20%);
+$color-primary-light: lighten($color-primary, 45%);
+$color-primary-text: lighten($color-primary, 60%);
+$color-secondary: #A49A87; /* light blue background */
+$color-secondary-dark: darken($color-secondary, 40%);
+$color-secondary-light: lighten($color-secondary, 30%);
+$color-secondary-text: $color-secondary-light;
+$color-highlight: #FF974F;
+$color-highlight-text: #fff;
+
+$mobile-width: 749px;
+
+/* Grid system padding and columns */
+$pad: 1.25em;
+$pad-less: 0.8em;
+$pad-least: 0.4em;

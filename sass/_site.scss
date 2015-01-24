@@ -1,0 +1,126 @@
+/* General styles */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { 
+  background-color: $color-primary-light; /* light grey */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+}
+
+h2 {
+  background-color: $color-highlight;
+  color: $color-highlight-text;
+  padding: $pad-least;
+  font-size: 1.4em;
+}
+
+a {
+  color: $color-secondary-dark;
+  &:hover {
+    color: $color-secondary-light;
+  }
+}
+
+p {
+  line-height: 1.4;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  margin-bottom: 1em;
+}
+
+nav, header, footer {
+  width: 100%;
+}
+
+/* Section specific styles */
+header {
+  background-color: $color-primary;
+  h1 {
+    margin: 0;
+    font-size: 2em;
+    color: $color-primary-text;
+    text-transform: uppercase;
+  }
+}
+
+nav {
+  background-color: $color-secondary;
+  ul {
+    width: 100%;
+    font-weight: bold;
+    a {
+      font-family: $font-secondary;
+      color: $color-primary-light;
+      text-decoration: none;
+      font-weight: bold;
+      padding: $pad-less;
+      float: left;
+      &:hover {
+        color: $color-primary-dark;
+      }
+    }
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  background-color: $color-primary-light;
+}
+
+footer {
+  text-align: center;
+}
+
+/* row padding system */
+.row {
+  &::after {
+      content: "";
+      display: table;
+      clear: both;        
+  }
+}
+
+/* Opt-in outside padding */
+.row-pad {
+  padding: $pad;
+}
+
+
+@media only screen and (min-width: $mobile-width + 1) and (max-width: 850px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  header h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+}

@@ -1,0 +1,26 @@
+/* Clean Grid */
+@media only screen and (max-width: 749px) { 
+  nav.row-pad {
+    padding: 0;
+  }
+  nav li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid; 
+  }
+  nav li a {
+    display: block;
+    float: none;
+    padding: 1.25em;
+  }
+  nav li:nth-of-type(odd) {
+    border-right: 1px solid;
+  }
+  /* If last li on it's own line, give it 100% width and 
+     no right border */
+  nav li:last-of-type:nth-of-type(odd) {
+    width: 100%;
+    border-right: none;
+  }    
+}
