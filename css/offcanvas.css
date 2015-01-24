@@ -1,5 +1,8 @@
 /* Off-Canvas */
-
+.wrapper,
+.inner {
+  overflow: hidden;
+}
 /* Desktop width styles */
 .btn {
   display: none; /* Hide button at normal widths */
